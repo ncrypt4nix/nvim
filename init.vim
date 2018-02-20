@@ -55,4 +55,10 @@ autocmd BufNewFile,BufRead *.html call DetectTemplate()
 
 "" vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
+
+Plug 'joshdick/onedark.vim' " color scheme
+Plug 'davidhalter/jedi-vim' " autocomletion
+
 call plug#end() " initialize plugin system
+
+colorscheme onedark

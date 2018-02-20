@@ -10,3 +10,5 @@ nvim config
 <h4>Install vim-plug</h4>
 <p>curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \ <br />
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim </p>
+<h4>Install plugins</h4>
+<p> Open nvim and run :PlugInstall </p>
