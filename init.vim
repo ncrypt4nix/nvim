@@ -1,45 +1,45 @@
-"" нумерация строк
-set number " номера строк
-set relativenumber " относительные номера строк
+"" line numbering
+set number 
+set relativenumber 
 
-"" формат файла
-set fileformat=unix " форматирование в unix формат файлов по умолчанию
-set encoding=utf-8 " кодировка
-set termencoding=utf-8 " кодировка терминала
-set fileencoding=utf-8 " кодировка сохранения файла
+"" file format
+set fileformat=unix 
+set encoding=utf-8 
+set termencoding=utf-8 
+set fileencoding=utf-8
 
-"" табуляция
-set tabstop=4 " размер табуляции
-set softtabstop=4 " количество пробелов
-set autoindent " авто отступ
-set shiftwidth=4 " размер отступов
-set smarttab " умные отступы
+"" tab
+set tabstop=4 
+set softtabstop=4 
+set autoindent 
+set shiftwidth=4 
+set smarttab 
 
-"" подсветка синтаксиса
+"" syntax highlighting
 filetype plugin on
 syntax on
 
-"" поиск
-set incsearch " перескакивать на текст
-set ignorecase " игнорировать регистр
+"" search
+set incsearch 
+set ignorecase 
 
-"" перенос строк
-set wrap " перенос строк
-set linebreak " умный перенос строк
-set breakindent " перенос с отступом
+"" line wrapping
+set wrap 
+set linebreak 
+set breakindent 
 
-"" фолдинг
-set foldenable " включение
-set foldmethod=syntax " метод фолдинга
+"" folding
+set foldenable 
+set foldmethod=syntax 
 
-set autochdir " автоматический переход в директорию файла
-set showcmd " отображение действий
-
-"" проверка орфографии
+"" spell checking
  set spell
  setlocal spell spelllang=ru_ru
 
-"" хак для помощи vim определения шаблонов django от html
+set autochdir 
+set showcmd 
+
+"" hack to help vim define django templates from html
 fun! DetectTemplate()
   let n = 1
   while n < line("$")
@@ -52,3 +52,7 @@ fun! DetectTemplate()
   set ft=html "default html
 endfun
 autocmd BufNewFile,BufRead *.html call DetectTemplate()
+
+"" vim-plug
+call plug#begin('~/.local/share/nvim/plugged')
+call plug#end() " initialize plugin system
