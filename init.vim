@@ -34,7 +34,7 @@ set foldmethod=syntax
 
 "" spell checking
  set spell
- setlocal spell spelllang=ru_ru
+ setlocal spell spelllang=ru_ru,en_us
 
 set autochdir 
 set showcmd 
