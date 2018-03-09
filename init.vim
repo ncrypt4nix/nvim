@@ -57,8 +57,15 @@ autocmd BufNewFile,BufRead *.html call DetectTemplate()
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'joshdick/onedark.vim' " color scheme
-Plug 'davidhalter/jedi-vim' " autocomletion
+Plug 'neovim/python-client'
+Plug 'roxma/nvim-yarp'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 
 call plug#end() " initialize plugin system
 
+"" init onedark theme
 colorscheme onedark
+
+"" init deoplete
+let g:deoplete#enable_at_startup = 1
