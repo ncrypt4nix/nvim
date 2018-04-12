@@ -61,6 +61,7 @@ Plug 'neovim/python-client'
 Plug 'roxma/nvim-yarp'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
+Plug 'vifm/neovim-vifm'
 
 call plug#end() " initialize plugin system
 
