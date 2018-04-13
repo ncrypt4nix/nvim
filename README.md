@@ -1,6 +1,11 @@
 # nvim
 nvim config
 
+<h3>Dependencies</h3>
+<ul>
+	<li>NeoVim</li>
+	<li>ViFm</li>
+</ul>
 <h3>Install:</h3>
 <h4>Install nvim config</h4>
 <ul>
