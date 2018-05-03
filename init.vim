@@ -13,7 +13,8 @@ set tabstop=4
 set softtabstop=4 
 set autoindent 
 set shiftwidth=4 
-set smarttab 
+set expandtab
+set smartindent
 
 "" syntax highlighting
 filetype plugin on
@@ -30,7 +31,7 @@ set breakindent
 
 "" folding
 set foldenable 
-set foldmethod=syntax 
+set foldmethod=indent
 
 "" spell checking
  set spell
@@ -52,6 +53,7 @@ fun! DetectTemplate()
   set ft=html "default html
 endfun
 autocmd BufNewFile,BufRead *.html call DetectTemplate()
+autocmd BufNewFile,BufRead *.tpl call DetectTemplate()
 
 "" vim-plug
 call plug#begin('~/.local/share/nvim/plugged')
@@ -62,6 +64,10 @@ Plug 'roxma/nvim-yarp'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'vifm/neovim-vifm'
+Plug 'brettanomyces/nvim-terminus'
+Plug 'jsfaint/gen_tags.vim'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'gryf/pep8-vim'
 
 call plug#end() " initialize plugin system
 

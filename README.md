@@ -5,6 +5,8 @@ nvim config
 <ul>
 	<li>NeoVim</li>
 	<li>ViFm</li>
+    <li>Python 3 Client for NeoVim</li>
+    <li>GNU Global (GTags)</li>
 </ul>
 <h3>Install:</h3>
 <h4>Install nvim config</h4>
