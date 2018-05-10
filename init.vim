@@ -40,6 +40,13 @@ set foldmethod=indent
 set autochdir 
 set showcmd 
 
+" python abbreviation
+ab ipdb import ipdb; ipdb.set_trace()
+ab pudb import pudb; pudb.set_trace()
+
+" mapping
+map <F1> :Vifm .<CR> 
+
 "" hack to help vim define django templates from html
 fun! DetectTemplate()
   let n = 1
